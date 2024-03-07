@@ -18,6 +18,10 @@ themes.forEach(theme => {
 
       paymentContent = optimize(paymentContent, {
          multipass: true,
+         js2svg: {
+            indent: 3,
+            pretty: true,
+         },
          plugins: [
             "sortAttrs",
             "removeTitle",
@@ -28,6 +32,13 @@ themes.forEach(theme => {
             "moveGroupAttrsToElems",
             "convertColors",
             "convertTransform",
+            {
+               name: "prefixIds",
+               params: {
+                  prefix: `tabler-payments-${name}`,
+                  delim: '-'
+               }
+            },
             {
                name: "convertShapeToPath",
                params: {
