@@ -11,7 +11,7 @@ export interface DynamicPaymentProps extends PaymentProps {
 
 /**
  * Renders a payment provider logo by slug, for data-driven lists (e.g. an accepted-
- * providers row built from `@tabler/payments`' `payments.json`). Mirrors the existing
+ * providers row built from `paymentsList`). Mirrors the existing
  * CSS-plugin/Astro API (`tabler/shared/ui/Payment.astro`'s `payment` prop) so teams
  * already using that plugin have a drop-in equivalent here.
  *

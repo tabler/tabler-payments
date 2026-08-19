@@ -39,9 +39,7 @@
     "test": "vitest run --typecheck",
     "typecheck": "tsc"
   },
-  "dependencies": {
-    "@tabler/payments": "workspace:"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "16.3.1",

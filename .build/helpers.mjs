@@ -30,7 +30,7 @@ export const toPascalCase = (string) => {
 };
 
 /**
- * Convert a single SVG attribute name to its React/Preact/RN camelCase prop name.
+ * Convert a single SVG attribute name to its React camelCase prop name.
  * Unlike icon libraries with only `stroke-width`, brand logos use a much wider
  * attribute vocabulary (clip-path, fill-rule, stop-color, xlink:href, ...), so this
  * is generic rather than a single hardcoded special case.
