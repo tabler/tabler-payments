@@ -1,7 +1,7 @@
 {
   "name": "tabler-payments",
   "version": "0.1.0",
-  "description": "Payment provider logo components for React, Vue and Preact.",
+  "description": "Payment provider logo components for React, Vue, Preact and Astro.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tabler/tabler-payments.git"
@@ -17,10 +17,11 @@
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
     "build": "pnpm run build:packages && pnpm run typecheck",
-    "build:packages": "pnpm run build:react && pnpm run build:vue && pnpm run build:preact",
+    "build:packages": "pnpm run build:react && pnpm run build:vue && pnpm run build:preact && pnpm run build:astro",
     "build:react": "pnpm --filter @tabler/payments-react build",
     "build:vue": "pnpm --filter @tabler/payments-vue build",
     "build:preact": "pnpm --filter @tabler/payments-preact build",
+    "build:astro": "pnpm --filter @tabler/payments-astro build",
     "changelog": "node ./.build/changelog.mjs",
     "release": "git pull && GITHUB_TOKEN=${GITHUB_TOKEN:-$(gh auth token)} release-it --verbose"
   },
