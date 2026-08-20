@@ -22,6 +22,7 @@
     "build:vue": "pnpm --filter @tabler/payments-vue build",
     "build:preact": "pnpm --filter @tabler/payments-preact build",
     "build:astro": "pnpm --filter @tabler/payments-astro build",
+    "build:preview": "pnpm --filter preview build",
     "changelog": "node ./.build/changelog.mjs",
     "release": "git pull && GITHUB_TOKEN=${GITHUB_TOKEN:-$(gh auth token)} release-it --verbose"
   },
