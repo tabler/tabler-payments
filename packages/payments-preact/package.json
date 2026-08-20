@@ -1,0 +1,55 @@
+{
+  "name": "@tabler/payments-preact",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Payment provider logos as Preact components.",
+  "homepage": "https://github.com/tabler/tabler-payments",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-payments/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-payments.git",
+    "directory": "packages/payments-preact"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/tabler-payments-preact.cjs",
+  "types": "./dist/tabler-payments-preact.d.ts",
+  "module": "./dist/esm/tabler-payments-preact.mjs",
+  "amdName": "TablerPaymentsPreact",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "payments",
+    "svg",
+    "preact",
+    "checkout",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:payments && pnpm typecheck && pnpm run build:bundles",
+    "build:payments": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/payments/*' -exec rm -rf {} +",
+    "test": "vitest run --typecheck",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/preact": "^3.2.3",
+    "jest-serializer-html": "^7.1.0",
+    "preact": "^10.19.6",
+    "vitest": "^4.0.16"
+  },
+  "optionalDependencies": {}
+}

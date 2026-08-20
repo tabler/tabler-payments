@@ -1,0 +1,52 @@
+{
+  "name": "@tabler/payments-astro",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Payment provider logos as Astro components.",
+  "homepage": "https://github.com/tabler/tabler-payments",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-payments/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-payments.git",
+    "directory": "packages/payments-astro"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/tabler-payments-astro.cjs",
+  "module": "./dist/esm/tabler-payments-astro.mjs",
+  "types": "./dist/tabler-payments-astro.d.ts",
+  "amdName": "TablerPaymentsAstro",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "payments",
+    "svg",
+    "astro",
+    "checkout",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:payments && pnpm run typecheck && pnpm run build:bundles",
+    "build:payments": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/payments/*' -exec rm -rf {} +",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "astro": ">=7.2.4 <8.0.0"
+  },
+  "devDependencies": {
+    "astro": "7.2.4",
+    "typescript": "5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "optionalDependencies": {}
+}

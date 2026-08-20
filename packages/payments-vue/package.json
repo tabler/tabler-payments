@@ -1,0 +1,55 @@
+{
+  "name": "@tabler/payments-vue",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Payment provider logos as Vue 3 components.",
+  "homepage": "https://github.com/tabler/tabler-payments",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-payments/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-payments.git",
+    "directory": "packages/payments-vue"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/tabler-payments-vue.cjs",
+  "module": "./dist/esm/tabler-payments-vue.mjs",
+  "types": "./dist/tabler-payments-vue.d.ts",
+  "amdName": "TablerPaymentsVue",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "payments",
+    "svg",
+    "vue",
+    "checkout",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:payments && pnpm run build:bundles",
+    "build:payments": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/payments/*' -exec rm -rf {} +",
+    "test": "vitest run"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": ">=3.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/vue": "^8.0.2",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "@vue/compiler-sfc": "^3.4.20",
+    "@vue/test-utils": "2.4.4",
+    "vitest": "^4.0.16",
+    "vue": "^3.4.20"
+  },
+  "optionalDependencies": {}
+}
