@@ -35,7 +35,11 @@ themes.forEach(theme => {
             {
                name: "prefixIds",
                params: {
-                  prefix: `tabler-payments-${name}`,
+                  // Prefix includes the theme, not just the slug: light/dark are
+                  // often rendered side by side (see the preview page), and a
+                  // shared id (e.g. a <clipPath>) would collide across the two
+                  // <svg> elements in the same document otherwise.
+                  prefix: `tabler-payments-${name}-${theme}`,
                   delim: '-'
                }
             },
