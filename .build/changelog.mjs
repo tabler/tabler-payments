@@ -4,8 +4,8 @@ import { HOME_DIR } from './helpers.mjs';
 
 const lastVersion = process.env.LATEST_VERSION;
 
-if (!lastVersion) {
-  console.log('No LATEST_VERSION set, skipping changelog diff.');
+if (!lastVersion || lastVersion === 'null') {
+  console.log('No previous release tag, skipping changelog diff.');
   process.exit(0);
 }
 
