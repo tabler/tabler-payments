@@ -1,6 +1,6 @@
 # @tabler/payments-preact
 
-Payment provider logos as Preact components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists. Companion package to [`@tabler/icons-preact`](https://www.npmjs.com/package/@tabler/icons-preact).
+Payment provider logos as Preact components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists.
 
 > **Pre-1.0.** API may still change.
 
@@ -59,7 +59,7 @@ The dynamic `Payment` component additionally requires:
 
 ## Providers
 
-100 of 107 payment providers currently ship an SVG (7 are pending — see the [root README](https://github.com/tabler/tabler-payments#adding-a-provider) for how to add one). Component names below are also the named exports of this package.
+Component names below are also the named exports of this package.
 
 <details>
 <summary>Show all 100 providers</summary>

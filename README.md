@@ -1,6 +1,6 @@
 # tabler-payments
 
-Payment provider logos as components for React, Vue, Preact and Astro — the payments counterpart to [`@tabler/icons-*`](https://github.com/tabler/tabler-icons).
+Payment provider logos as components for React, Vue, Preact and Astro.
 
 Each package ships one tree-shakable component per provider (`PaymentVisa`, `PaymentMastercard`, ...), plus a `Payment` component for rendering by slug. See each package's own README for its exact API:
 
@@ -10,8 +10,6 @@ Each package ships one tree-shakable component per provider (`PaymentVisa`, `Pay
 | [`@tabler/payments-vue`](packages/payments-vue) | [README](packages/payments-vue/README.md) | Vue 3 |
 | [`@tabler/payments-preact`](packages/payments-preact) | [README](packages/payments-preact/README.md) | Preact |
 | [`@tabler/payments-astro`](packages/payments-astro) | [README](packages/payments-astro/README.md) | Astro |
-
-Currently 100 of 107 payment providers have an SVG (7 are pending — see [Adding a provider](#adding-a-provider) below).
 
 ## Repo structure
 

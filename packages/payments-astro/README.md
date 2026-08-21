@@ -1,6 +1,6 @@
 # @tabler/payments-astro
 
-Payment provider logos as Astro components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists. Companion package to [`@tabler/icons-astro`](https://www.npmjs.com/package/@tabler/icons-astro).
+Payment provider logos as Astro components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists.
 
 Renders server-side only, with no client-side hydration — the same as any other `.astro` component.
 
@@ -56,7 +56,7 @@ The dynamic `Payment` component additionally requires:
 
 ## Providers
 
-100 of 107 payment providers currently ship an SVG (7 are pending — see the [root README](https://github.com/tabler/tabler-payments#adding-a-provider) for how to add one). Component names below are also the named exports of this package.
+Component names below are also the named exports of this package.
 
 <details>
 <summary>Show all 100 providers</summary>
