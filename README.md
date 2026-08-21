@@ -69,4 +69,4 @@ If the SVG has gradients, clip paths, or other nested elements, no extra work is
 
 ## License
 
-MIT
+tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).

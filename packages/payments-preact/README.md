@@ -171,4 +171,4 @@ The dynamic `Payment` component additionally requires:
 
 ## License
 
-MIT
+tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).
