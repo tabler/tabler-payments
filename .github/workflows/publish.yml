@@ -1,0 +1,46 @@
+name: Publish to npm
+
+# release-it (pnpm run release) creates and pushes a `v*` tag once it has
+# bumped the version, built, and created the GitHub Release. That tag push
+# is the trigger here — npm publishing itself no longer happens from a
+# maintainer's machine (that needs an org role most maintainers don't have,
+# plus interactive 2FA), it happens from CI using an automation token.
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      # `-r` publishes every package under packages/* (the root package is
+      # skipped automatically — it's "private": true). NODE_AUTH_TOKEN needs
+      # an npm automation/granular token with publish rights on @tabler and
+      # "bypass two-factor authentication" enabled, stored as the NPM_TOKEN
+      # repo secret.
+      - name: Publish
+        run: pnpm -r publish --tag latest --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
