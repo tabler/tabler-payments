@@ -2,6 +2,8 @@
 
 Payment provider logos as React components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists. Companion package to [`@tabler/icons-react`](https://www.npmjs.com/package/@tabler/icons-react).
 
+> **Pre-1.0.** API may still change.
+
 ## Install
 
 ```bash

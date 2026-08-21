@@ -4,6 +4,8 @@ Payment provider logos as Astro components — one tree-shakable component per p
 
 Renders server-side only, with no client-side hydration — the same as any other `.astro` component.
 
+> **Pre-1.0.** API may still change.
+
 ## Install
 
 ```bash

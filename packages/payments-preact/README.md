@@ -2,6 +2,8 @@
 
 Payment provider logos as Preact components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists. Companion package to [`@tabler/icons-preact`](https://www.npmjs.com/package/@tabler/icons-preact).
 
+> **Pre-1.0.** API may still change.
+
 ## Install
 
 ```bash

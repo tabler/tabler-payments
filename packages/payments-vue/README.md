@@ -2,6 +2,8 @@
 
 Payment provider logos as Vue 3 components — one tree-shakable component per provider, plus a dynamic lookup by slug for data-driven lists. Companion package to [`@tabler/icons-vue`](https://www.npmjs.com/package/@tabler/icons-vue).
 
+> **Pre-1.0.** API may still change.
+
 ## Install
 
 ```bash
