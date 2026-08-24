@@ -1,6 +1,6 @@
 import { describe, it, expect, afterEach } from 'vitest';
 import { render, cleanup } from '@testing-library/preact';
-import { PaymentVisa, PaymentJcb, PaymentEasypaisa, Payment } from './src/tabler-payments-preact';
+import { PaymentVisa, PaymentJcb, PaymentEasypaisa, Payment, paymentsList } from './src/tabler-payments-preact';
 
 describe('payments-preact', () => {
   afterEach(() => {
@@ -36,5 +36,37 @@ describe('payments-preact', () => {
   it('renders dynamically via the Payment lookup component', () => {
     const { container } = render(<Payment provider="mastercard" />);
     expect(container.getElementsByTagName('svg').length).toBeGreaterThan(0);
+  });
+
+  it('renders nothing for an unknown provider slug', () => {
+    const { container } = render(<Payment provider={'not-a-real-provider' as any} />);
+    expect(container.getElementsByTagName('svg').length).toBe(0);
+  });
+
+  it('adds an accessible <title> when the title prop is set', () => {
+    const { container } = render(<PaymentVisa title="Visa" />);
+    expect(container.querySelector('title')?.textContent).toBe('Visa');
+  });
+
+  it('forwards unknown props to the root <svg>', () => {
+    const { container } = render(<PaymentVisa data-testid="my-visa" aria-label="Visa logo" />);
+    const svg = container.getElementsByTagName('svg')[0];
+    expect(svg.getAttribute('data-testid')).toBe('my-visa');
+    expect(svg.getAttribute('aria-label')).toBe('Visa logo');
+  });
+
+  it('defaults to the light variant when none is given', () => {
+    const withoutVariant = render(<PaymentVisa />);
+    const explicitLight = render(<PaymentVisa variant="light" />);
+    expect(withoutVariant.container.innerHTML).toBe(explicitLight.container.innerHTML);
+  });
+
+  it('renders every provider in paymentsList without throwing', () => {
+    expect(paymentsList.length).toBeGreaterThan(0);
+    paymentsList.forEach((slug) => {
+      const { container, unmount } = render(<Payment provider={slug as any} />);
+      expect(container.getElementsByTagName('svg').length, `provider "${slug}" did not render an <svg>`).toBeGreaterThan(0);
+      unmount();
+    });
   });
 });
