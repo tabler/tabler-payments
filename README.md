@@ -75,7 +75,17 @@ This repo uses [Changesets](https://github.com/changesets/changesets). All four 
 
 For a change that should not publish, use `pnpm changeset --empty`.
 
-The GitHub repo needs an `NPM_TOKEN` secret, and **Allow GitHub Actions to create and approve pull requests** enabled under Settings → Actions → General.
+Publish uses [npm Trusted Publishers](https://docs.npmjs.com/trusted-publishers/) (OIDC). No `NPM_TOKEN` secret.
+
+On each `@tabler/payments-*` package on npmjs.com, add a GitHub Actions trusted publisher:
+
+- Organization: `tabler`
+- Repository: `tabler-payments`
+- Workflow filename: `release.yml`
+- Environment: leave empty
+- Allowed actions: `npm publish`
+
+Also enable **Allow GitHub Actions to create and approve pull requests** under Settings → Actions → General.
 
 ## License
 

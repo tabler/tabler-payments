@@ -20,4 +20,4 @@ Use `pnpm changeset --empty` for a change that should not publish (docs, CI, bui
 
 1. Merge the PR into `main`.
 2. CI opens a **Version packages** PR. It bumps versions and updates changelogs.
-3. Merge that PR. CI publishes to npm and creates a GitHub release.
+3. Merge that PR. CI publishes to npm with Trusted Publishers (OIDC) and creates a GitHub release.
