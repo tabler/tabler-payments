@@ -4,12 +4,12 @@ Payment provider logos as components for React, Vue, Preact and Astro.
 
 Each package ships one tree-shakable component per provider (`PaymentVisa`, `PaymentMastercard`, ...), plus a `Payment` component for rendering by slug. See each package's own README for its exact API:
 
-| Package | README | Framework |
-| --- | --- | --- |
-| [`@tabler/payments-react`](packages/payments-react) | [README](packages/payments-react/README.md) | React |
-| [`@tabler/payments-vue`](packages/payments-vue) | [README](packages/payments-vue/README.md) | Vue 3 |
-| [`@tabler/payments-preact`](packages/payments-preact) | [README](packages/payments-preact/README.md) | Preact |
-| [`@tabler/payments-astro`](packages/payments-astro) | [README](packages/payments-astro/README.md) | Astro |
+| Package                                               | README                                       | Framework |
+| ----------------------------------------------------- | -------------------------------------------- | --------- |
+| [`@tabler/payments-react`](packages/payments-react)   | [README](packages/payments-react/README.md)  | React     |
+| [`@tabler/payments-vue`](packages/payments-vue)       | [README](packages/payments-vue/README.md)    | Vue 3     |
+| [`@tabler/payments-preact`](packages/payments-preact) | [README](packages/payments-preact/README.md) | Preact    |
+| [`@tabler/payments-astro`](packages/payments-astro)   | [README](packages/payments-astro/README.md)  | Astro     |
 
 ## Repo structure
 
@@ -90,3 +90,6 @@ Also enable **Allow GitHub Actions to create and approve pull requests** under S
 ## License
 
 tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).
+
+testtest
+test
