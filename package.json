@@ -1,6 +1,6 @@
 {
   "name": "tabler-payments",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Payment provider logo components for React, Vue, Preact and Astro.",
   "repository": {
     "type": "git",
