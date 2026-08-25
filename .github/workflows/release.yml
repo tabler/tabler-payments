@@ -57,6 +57,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          # changelog-github looks up the commit that added each changeset.
+          # A shallow clone then runs `git fetch --deepen` and fails because
+          # persist-credentials is false.
+          fetch-depth: 0
           persist-credentials: false
 
       - name: Setup pnpm
@@ -77,6 +81,9 @@ jobs:
           script: pnpm run version-packages
           commit-message: Version packages
           pr-title: Version packages
+        env:
+          # changelog-github calls the GitHub API to link PRs and authors.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   pack:
     name: Pack packages
