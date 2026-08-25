@@ -1,3 +1,4 @@
+import { createRef } from 'react';
 import { describe, it, expect, afterEach } from 'vitest';
 import { render, cleanup } from '@testing-library/react';
 import { PaymentVisa, PaymentJcb, PaymentEasypaisa, Payment, paymentsList } from './src/tabler-payments-react';
@@ -46,6 +47,13 @@ describe('payments-react', () => {
   it('adds an accessible <title> when the title prop is set', () => {
     const { container } = render(<PaymentVisa title="Visa" />);
     expect(container.querySelector('title')?.textContent).toBe('Visa');
+  });
+
+  it('forwards a ref to the root <svg> DOM node', () => {
+    const ref = createRef<SVGSVGElement>();
+    render(<PaymentVisa ref={ref} />);
+    expect(ref.current).toBeInstanceOf(SVGSVGElement);
+    expect(ref.current?.tagName.toLowerCase()).toBe('svg');
   });
 
   it('forwards unknown props to the root <svg>', () => {
