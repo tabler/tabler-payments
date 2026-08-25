@@ -92,3 +92,4 @@ Also enable **Allow GitHub Actions to create and approve pull requests** under S
 tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).
 
 testtest
+test
