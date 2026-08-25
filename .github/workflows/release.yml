@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+env:
+  NODE_VERSION: '22'
+
+# Reset first, then grant only what this job needs.
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Version or publish
+    runs-on: ubuntu-latest
+    # contents + pull-requests: open/update the Version packages PR
+    # id-token: npm trusted publishing (optional; also works with NPM_TOKEN)
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # If there are pending changesets: open/update the Version packages PR.
+      # After that PR is merged: build and publish to npm, then create a GitHub release.
+      - name: Version packages or publish
+        uses: changesets/action@v2
+        with:
+          version-script: pnpm run version-packages
+          publish-script: pnpm run release
+          commit-message: Version packages
+          pr-title: Version packages
+          create-github-releases: true
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
