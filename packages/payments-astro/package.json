@@ -18,6 +18,14 @@
   "main": "./dist/cjs/tabler-payments-astro.cjs",
   "module": "./dist/esm/tabler-payments-astro.mjs",
   "types": "./dist/tabler-payments-astro.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-payments-astro.d.ts",
+      "import": "./dist/esm/tabler-payments-astro.mjs",
+      "require": "./dist/cjs/tabler-payments-astro.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "amdName": "TablerPaymentsAstro",
   "sideEffects": false,
   "files": [
