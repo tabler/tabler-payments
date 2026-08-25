@@ -18,6 +18,14 @@
   "main": "./dist/cjs/tabler-payments-vue.cjs",
   "module": "./dist/esm/tabler-payments-vue.mjs",
   "types": "./dist/tabler-payments-vue.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-payments-vue.d.ts",
+      "import": "./dist/esm/tabler-payments-vue.mjs",
+      "require": "./dist/cjs/tabler-payments-vue.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "amdName": "TablerPaymentsVue",
   "sideEffects": false,
   "files": [

@@ -18,6 +18,14 @@
   "main": "./dist/cjs/tabler-payments-preact.cjs",
   "types": "./dist/tabler-payments-preact.d.ts",
   "module": "./dist/esm/tabler-payments-preact.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-payments-preact.d.ts",
+      "import": "./dist/esm/tabler-payments-preact.mjs",
+      "require": "./dist/cjs/tabler-payments-preact.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "amdName": "TablerPaymentsPreact",
   "sideEffects": false,
   "files": [

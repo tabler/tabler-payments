@@ -18,6 +18,14 @@
   "main": "./dist/cjs/tabler-payments-react.cjs",
   "module": "./dist/esm/tabler-payments-react.mjs",
   "types": "./dist/tabler-payments-react.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-payments-react.d.ts",
+      "import": "./dist/esm/tabler-payments-react.mjs",
+      "require": "./dist/cjs/tabler-payments-react.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "amdName": "TablerPaymentsReact",
   "sideEffects": false,
   "files": [
