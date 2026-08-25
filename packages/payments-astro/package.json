@@ -1,6 +1,6 @@
 {
   "name": "@tabler/payments-astro",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "Payment provider logos as Astro components.",
   "homepage": "https://github.com/tabler/tabler-payments",

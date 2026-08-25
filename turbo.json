@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
-      "outputs": ["dist/**", "src/payments/**", "providers/**", "payments.json", "payments-nodes.json"],
+      "outputs": ["dist/**", "src/payments/**", "src/payments-list.ts", "providers/**", "payments.json", "payments-nodes.json"],
       "dependsOn": ["^build"],
       "inputs": ["../../src/**"]
     },

@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { experimental_AstroContainer as AstroContainer } from 'astro/container';
-import { PaymentVisa, PaymentJcb, PaymentEasypaisa, Payment } from './src/tabler-payments-astro';
+import { PaymentVisa, PaymentJcb, PaymentEasypaisa, Payment, paymentsList } from './src/tabler-payments-astro';
 
 describe('payments-astro', () => {
   let container: Awaited<ReturnType<typeof AstroContainer.create>>;
@@ -38,5 +38,35 @@ describe('payments-astro', () => {
   it('renders dynamically via the Payment lookup component', async () => {
     const html = await container.renderToString(Payment as any, { props: { provider: 'mastercard' } });
     expect(html).toContain('<svg');
+  });
+
+  it('renders nothing for an unknown provider slug', async () => {
+    const html = await container.renderToString(Payment as any, { props: { provider: 'not-a-real-provider' } });
+    expect(html).not.toContain('<svg');
+  });
+
+  it('adds an accessible <title> when the title prop is set', async () => {
+    const html = await container.renderToString(PaymentVisa as any, { props: { title: 'Visa' } });
+    expect(html).toContain('<title>Visa</title>');
+  });
+
+  it('forwards unknown props to the root <svg>', async () => {
+    const tag = openingTag(await container.renderToString(PaymentVisa as any, { props: { 'data-testid': 'my-visa', 'aria-label': 'Visa logo' } }));
+    expect(tag).toContain('data-testid="my-visa"');
+    expect(tag).toContain('aria-label="Visa logo"');
+  });
+
+  it('defaults to the light variant when none is given', async () => {
+    const withoutVariant = await container.renderToString(PaymentVisa as any);
+    const explicitLight = await container.renderToString(PaymentVisa as any, { props: { variant: 'light' } });
+    expect(withoutVariant).toBe(explicitLight);
+  });
+
+  it('renders every provider in paymentsList without throwing', async () => {
+    expect(paymentsList.length).toBeGreaterThan(0);
+    for (const slug of paymentsList) {
+      const html = await container.renderToString(Payment as any, { props: { provider: slug } });
+      expect(html, `provider "${slug}" did not render an <svg>`).toContain('<svg');
+    }
   });
 });

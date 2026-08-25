@@ -65,6 +65,28 @@ pnpm --filter preview run dev
 
 If the SVG has gradients, clip paths, or other nested elements, no extra work is needed either — the generator parses SVG recursively, not just flat `<path>` lists.
 
+## Release
+
+This repo uses [Changesets](https://github.com/changesets/changesets). All four packages share one version.
+
+1. After a change that should go to npm, run `pnpm changeset` and commit the new file in `.changeset/`.
+2. Merge the PR into `main`. CI opens a **Version packages** PR.
+3. Merge that PR. CI publishes to npm and creates a GitHub release.
+
+For a change that should not publish, use `pnpm changeset --empty`.
+
+Publish uses [npm Trusted Publishers](https://docs.npmjs.com/trusted-publishers/) (OIDC). No `NPM_TOKEN` secret.
+
+On each `@tabler/payments-*` package on npmjs.com, add a GitHub Actions trusted publisher:
+
+- Organization: `tabler`
+- Repository: `tabler-payments`
+- Workflow filename: `release.yml`
+- Environment: leave empty
+- Allowed actions: `npm publish`
+
+Also enable **Allow GitHub Actions to create and approve pull requests** under Settings → Actions → General.
+
 ## License
 
 tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).
