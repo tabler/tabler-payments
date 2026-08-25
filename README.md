@@ -1,17 +1,40 @@
-# tabler-payments
+<p align="center">
+<a href="https://tabler.io"><img src="https://raw.githubusercontent.com/tabler/tabler/refs/heads/dev/shared/static/logo.svg" alt="Tabler" width="300"></a>
+</p>
 
+<p align="center">
 Payment provider logos as components for React, Vue, Preact and Astro.
+</p>
+
+<p align="center">
+<a href="https://github.com/tabler/tabler-payments/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@tabler/payments-react.svg?label=License&message=MIT&color=1c7ed6" alt="License"></a>
+<a href="https://github.com/tabler/tabler-payments/actions/workflows/ci.yml" target="__blank"><img alt="CI" src="https://github.com/tabler/tabler-payments/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/tabler/tabler-payments/actions/workflows/release.yml" target="__blank"><img alt="Release" src="https://github.com/tabler/tabler-payments/actions/workflows/release.yml/badge.svg"></a>
+<a href="https://github.com/tabler/tabler-payments" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/tabler/tabler-payments?style=social"></a>
+</p>
+
+## 💛 Sponsors
+
+**If you want to support our project and help us grow it, you can [become a sponsor on GitHub](https://github.com/sponsors/codecalm) or just [donate on PayPal](https://paypal.me/codecalm) :)**
+
+<p align="center">
+	<a href="https://github.com/sponsors/codecalm">
+		<img src="https://raw.githubusercontent.com/tabler/sponsors/main/sponsors.svg" alt="Tabler sponsors">
+	</a>
+</p>
+
+## 📦 Packages
 
 Each package ships one tree-shakable component per provider (`PaymentVisa`, `PaymentMastercard`, ...), plus a `Payment` component for rendering by slug. See each package's own README for its exact API:
 
-| Package                                               | README                                       | Framework |
-| ----------------------------------------------------- | -------------------------------------------- | --------- |
-| [`@tabler/payments-react`](packages/payments-react)   | [README](packages/payments-react/README.md)  | React     |
-| [`@tabler/payments-vue`](packages/payments-vue)       | [README](packages/payments-vue/README.md)    | Vue 3     |
-| [`@tabler/payments-preact`](packages/payments-preact) | [README](packages/payments-preact/README.md) | Preact    |
-| [`@tabler/payments-astro`](packages/payments-astro)   | [README](packages/payments-astro/README.md)  | Astro     |
+| Package | Version | Framework | README |
+| --- | --- | --- | --- |
+| [`@tabler/payments-react`](packages/payments-react) | [![npm](https://img.shields.io/npm/v/@tabler/payments-react?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/payments-react) | React | [README](packages/payments-react/README.md) |
+| [`@tabler/payments-vue`](packages/payments-vue) | [![npm](https://img.shields.io/npm/v/@tabler/payments-vue?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/payments-vue) | Vue 3 | [README](packages/payments-vue/README.md) |
+| [`@tabler/payments-preact`](packages/payments-preact) | [![npm](https://img.shields.io/npm/v/@tabler/payments-preact?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/payments-preact) | Preact | [README](packages/payments-preact/README.md) |
+| [`@tabler/payments-astro`](packages/payments-astro) | [![npm](https://img.shields.io/npm/v/@tabler/payments-astro?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/payments-astro) | Astro | [README](packages/payments-astro/README.md) |
 
-## Repo structure
+## 🗂️ Repo structure
 
 ```
 tabler-payments/
@@ -36,7 +59,7 @@ tabler-payments/
 
 All four packages share the same source of truth (`payments.json` + `src/`) and the same generator (`.build/`). A framework package only supplies the last step — turning the shared `IconNode` data into a real component.
 
-## Local development
+## 🛠️ Local development
 
 ```bash
 pnpm install
@@ -57,7 +80,7 @@ To run the visual QA page (renders every provider, light and dark, independent o
 pnpm --filter preview run dev
 ```
 
-## Adding a provider
+## ➕ Adding a provider
 
 1. Add `src/light/{slug}.svg` and `src/dark/{slug}.svg` — both variants are required, a provider with only one is skipped by the build (with a console warning) rather than failing.
 2. Add an entry to `payments.json`: `{ "name": "Display Name", "logo": "slug" }`.
@@ -65,7 +88,7 @@ pnpm --filter preview run dev
 
 If the SVG has gradients, clip paths, or other nested elements, no extra work is needed either — the generator parses SVG recursively, not just flat `<path>` lists.
 
-## Release
+## 🚀 Release
 
 This repo uses [Changesets](https://github.com/changesets/changesets). All four packages share one version.
 
@@ -87,6 +110,10 @@ On each `@tabler/payments-*` package on npmjs.com, add a GitHub Actions trusted 
 
 Also enable **Allow GitHub Actions to create and approve pull requests** under Settings → Actions → General.
 
-## License
+## 🤝 Contributing
+
+Found a bug or have an idea? [Open an issue](https://github.com/tabler/tabler-payments/issues/new). By participating, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 📄 License
 
 tabler-payments is licensed under the [MIT License](https://github.com/tabler/tabler-payments/blob/main/LICENSE).
