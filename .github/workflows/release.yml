@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: '24'
 
 # Reset first, then grant only what each job needs.
 # npm Trusted Publisher must match this filename exactly: release.yml
