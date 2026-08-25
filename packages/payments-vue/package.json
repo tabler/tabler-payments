@@ -1,6 +1,6 @@
 {
   "name": "@tabler/payments-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "Payment provider logos as Vue 3 components.",
   "homepage": "https://github.com/tabler/tabler-payments",
