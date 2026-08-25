@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Astro 7 (used by payments-astro) requires Node >=22.12.0 — the same
+# requirement that broke the Vercel preview build when it defaulted to 20.x.
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  ci:
+    name: ${{ matrix.package }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - payments-react
+          - payments-vue
+          - payments-preact
+          - payments-astro
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Turbo's own cache (task outputs, content-hashed by inputs) — separate
+      # cache key per matrix package so 4 parallel jobs don't race to save
+      # the same key.
+      - name: Restore turbo cache
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ matrix.package }}-${{ github.sha }}
+          restore-keys: |
+            turbo-${{ matrix.package }}-
+
+      # Three separate steps, not one `pnpm run build` — a failure here shows
+      # up as its own red step on the PR instead of being buried inside a
+      # single build log. Build runs first since `typecheck` and `test` both
+      # depend on it in turbo.json — running it first means their dependency
+      # is a cache hit, not a rebuild, so nothing here runs twice for real.
+      - name: Build
+        run: pnpm exec turbo run build --filter=@tabler/${{ matrix.package }}
+
+      - name: Typecheck
+        run: pnpm exec turbo run typecheck --filter=@tabler/${{ matrix.package }}
+
+      - name: Test
+        run: pnpm exec turbo run test --filter=@tabler/${{ matrix.package }}
