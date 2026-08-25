@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@4.0.0/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "tabler/tabler-payments"
+    }
+  ],
+  "commit": false,
+  "fixed": [["@tabler/payments-*"]],
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "format": "auto",
+  "updateInternalDependencies": "patch",
+  "ignore": [],
+  "privatePackages": {
+    "version": false,
+    "tag": false
+  }
+}

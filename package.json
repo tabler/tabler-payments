@@ -1,6 +1,6 @@
 {
   "name": "tabler-payments",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Payment provider logo components for React, Vue, Preact and Astro.",
   "repository": {
     "type": "git",
@@ -26,16 +26,18 @@
     "build:preact": "pnpm --filter @tabler/payments-preact build",
     "build:astro": "pnpm --filter @tabler/payments-astro build",
     "build:preview": "pnpm --filter preview build",
-    "changelog": "node ./.build/changelog.mjs",
-    "release": "git pull && GITHUB_TOKEN=${GITHUB_TOKEN:-$(gh auth token)} release-it --verbose"
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm run build && changeset publish"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/changelog-github": "^1.0.0",
+    "@changesets/cli": "^3.0.1",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
-    "release-it": "21.0.0",
     "rollup": "4.54.0",
     "rollup-plugin-dts": "6.3.0",
     "rollup-plugin-esbuild": "6.2.1",
@@ -46,30 +48,6 @@
     "svgson": "^5.3.1",
     "turbo": "^2.10.7",
     "typescript": "5.9.3"
-  },
-  "release-it": {
-    "npm": false,
-    "hooks": {
-      "before:init": [
-        "npm whoami || (echo 'You are not logged in to npm. Run `npm login` first.' && exit 1)",
-        "gh auth status || (echo 'You are not logged in to GitHub. Run `gh auth login` first.' && exit 1)"
-      ],
-      "after:bump": "npm version ${version} --no-git-tag-version --allow-same-version && pnpm -r --filter './packages/*' exec npm version ${version} --no-git-tag-version --allow-same-version && pnpm run build && pnpm install",
-      "after:github:release": "pnpm -r publish --tag latest --no-git-checks",
-      "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
-    },
-    "git": {
-      "addUntrackedFiles": true,
-      "changelog": "LATEST_VERSION=${latestTag} pnpm run --silent changelog",
-      "tagName": "v${version}",
-      "requireBranch": "main",
-      "requireCommits": true,
-      "requireCleanWorkingDir": false
-    },
-    "github": {
-      "release": true,
-      "releaseNotes": "LATEST_VERSION=${latestTag} pnpm run --silent changelog"
-    }
   },
   "packageManager": "pnpm@10.30.3",
   "pnpm": {
