@@ -30,7 +30,7 @@
     "version-packages": "changeset version",
     "release": "pnpm run build && changeset publish"
   },
-  "author": "",
+  "author": "Paweł Kuna (https://codecalm.net)",
   "license": "MIT",
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.0",
