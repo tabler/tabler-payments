@@ -1,9 +1,13 @@
 <p align="center">
-<a href="https://tabler.io"><img src="https://raw.githubusercontent.com/tabler/tabler/refs/heads/dev/shared/static/logo.svg" alt="Tabler" width="300"></a>
+<a href="https://tabler.io/payments?ref=tabler-payments-readme"><img src="https://raw.githubusercontent.com/tabler/tabler-payments/main/.github/og.png" alt="Tabler Payments" width="838"></a>
 </p>
 
 <p align="center">
-Payment provider logos as components for React, Vue, Preact and Astro.
+A set of <!--payments-count-->169<!--/payments-count--> free MIT-licensed high-quality payment provider logos for credit cards, wallets and alternative payment methods, shipped as components for React, Vue, Preact and Astro. Each logo comes in a light and a dark variant.
+</p>
+
+<p align="center">
+<a href="https://tabler.io/payments?ref=tabler-payments-readme"><strong>Browse at tabler.io/payments &rarr;</strong></a>
 </p>
 
 <p align="center">
