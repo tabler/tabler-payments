@@ -5,4 +5,4 @@
 "@tabler/payments-astro": patch
 ---
 
-Updated the `Interac`, `Oxxo`, `Eway`, `Blik` and `Ripple` logos, and resized `Interac` from 100x70 to 100x60.
+Optimized every logo SVG, cutting the total payload from 1.7 MB to 814 KB.
