@@ -17,10 +17,11 @@
   "scripts": {
     "dev": "turbo run dev",
     "import-payments": "node ./.build/import-payments.mjs",
+    "update-readme": "node ./.build/update-readme.mjs",
     "clean": "turbo run clean",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
-    "build": "pnpm run build:packages && pnpm run typecheck",
+    "build": "pnpm run update-readme && pnpm run build:packages && pnpm run typecheck",
     "build:packages": "pnpm run build:react && pnpm run build:vue && pnpm run build:preact && pnpm run build:astro",
     "build:react": "pnpm --filter @tabler/payments-react build",
     "build:vue": "pnpm --filter @tabler/payments-vue build",
