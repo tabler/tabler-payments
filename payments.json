@@ -92,10 +92,6 @@
     "logo": "cirrus"
   },
   {
-    "name": "ClickandBuy",
-    "logo": "clickandbuy"
-  },
-  {
     "name": "Coinkite",
     "logo": "coinkite"
   },
@@ -110,10 +106,6 @@
   {
     "name": "Discover",
     "logo": "discover"
-  },
-  {
-    "name": "Dotpay",
-    "logo": "dotpay"
   },
   {
     "name": "Dwolla",
@@ -196,10 +188,6 @@
     "logo": "klarna"
   },
   {
-    "name": "Laser",
-    "logo": "laser"
-  },
-  {
     "name": "Litecoin",
     "logo": "litecoin"
   },
@@ -236,14 +224,6 @@
     "logo": "neteller"
   },
   {
-    "name": "Ogone",
-    "logo": "ogone"
-  },
-  {
-    "name": "OKPay",
-    "logo": "okpay"
-  },
-  {
     "name": "OpenSea",
     "logo": "opensea"
   },
@@ -262,10 +242,6 @@
   {
     "name": "Payline",
     "logo": "payline"
-  },
-  {
-    "name": "Paymill",
-    "logo": "paymill"
   },
   {
     "name": "Paynow",
@@ -300,10 +276,6 @@
     "logo": "payu"
   },
   {
-    "name": "Payza",
-    "logo": "payza"
-  },
-  {
     "name": "Poli",
     "logo": "poli"
   },
@@ -318,10 +290,6 @@
   {
     "name": "Ripple",
     "logo": "ripple"
-  },
-  {
-    "name": "Sage",
-    "logo": "sage"
   },
   {
     "name": "Samsung Pay",
@@ -352,10 +320,6 @@
     "logo": "solana"
   },
   {
-    "name": "Solo",
-    "logo": "solo"
-  },
-  {
     "name": "Spingo",
     "logo": "spingo"
   },
@@ -370,10 +334,6 @@
   {
     "name": "Stripe",
     "logo": "stripe"
-  },
-  {
-    "name": "Switch",
-    "logo": "switch"
   },
   {
     "name": "Tether",
@@ -392,10 +352,6 @@
     "logo": "true-usd"
   },
   {
-    "name": "Ukash",
-    "logo": "ukash"
-  },
-  {
     "name": "UnionPay",
     "logo": "unionpay"
   },
@@ -406,10 +362,6 @@
   {
     "name": "Verifone",
     "logo": "verifone"
-  },
-  {
-    "name": "Verisign",
-    "logo": "verisign"
   },
   {
     "name": "Visa",
