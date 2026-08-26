@@ -5,4 +5,4 @@
 "@tabler/payments-astro": patch
 ---
 
-Updated `Interac`, `Citi`, `Swish`, `iDEAL` and 14 other logos in light and dark variants.
+Updated `Interac`, `Citi`, `Swish`, `iDEAL` and 32 other logos in light and dark variants.
