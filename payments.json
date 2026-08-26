@@ -1427,5 +1427,223 @@
       "mexico",
       "prepaid"
     ]
+  },
+  {
+    "name": "Bank of America",
+    "logo": "bank-of-america",
+    "description": "One of the largest US retail banks, offering consumer accounts, cards, and payments.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "Barclays",
+    "logo": "barclays",
+    "description": "British multinational bank offering consumer banking, cards, and merchant acquiring.",
+    "tags": [
+      "bank",
+      "europe",
+      "united kingdom"
+    ]
+  },
+  {
+    "name": "BBVA",
+    "logo": "bbva",
+    "description": "Spanish multinational bank with a large retail presence in Spain, Mexico, and South America.",
+    "tags": [
+      "bank",
+      "europe",
+      "spain"
+    ]
+  },
+  {
+    "name": "BNP Paribas",
+    "logo": "bnp-paribas",
+    "description": "French multinational bank and one of the largest banking groups in Europe.",
+    "tags": [
+      "bank",
+      "europe",
+      "france"
+    ]
+  },
+  {
+    "name": "Capital One",
+    "logo": "capital-one",
+    "description": "US bank best known for its consumer credit cards.",
+    "tags": [
+      "bank",
+      "card network",
+      "us"
+    ]
+  },
+  {
+    "name": "Chase",
+    "logo": "chase",
+    "description": "US consumer and commercial banking brand of JPMorgan Chase, and a major card issuer.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "China Construction Bank",
+    "logo": "china-construction-bank",
+    "description": "One of China's four largest state-owned commercial banks.",
+    "tags": [
+      "bank",
+      "china"
+    ]
+  },
+  {
+    "name": "Citi",
+    "logo": "citi",
+    "description": "Citibank, the global consumer banking arm of Citigroup, active in cards and cross-border payments.",
+    "tags": [
+      "bank",
+      "cross-border",
+      "global"
+    ]
+  },
+  {
+    "name": "Deutsche Bank",
+    "logo": "deutsche-bank",
+    "description": "Germany's largest bank, serving corporate, investment, and retail clients.",
+    "tags": [
+      "bank",
+      "europe",
+      "germany"
+    ]
+  },
+  {
+    "name": "Fifth Third Bank",
+    "logo": "fifth-third-bank",
+    "description": "US regional bank serving the Midwest with consumer and commercial banking.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "Goldman Sachs",
+    "logo": "goldman-sachs",
+    "description": "US investment bank, also a consumer card issuer through its retail partnerships.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "HSBC",
+    "logo": "hsbc",
+    "description": "British multinational bank with a large retail and cross-border presence in Europe and Asia.",
+    "tags": [
+      "bank",
+      "cross-border",
+      "global"
+    ]
+  },
+  {
+    "name": "Huntington Bank",
+    "logo": "huntington-bank",
+    "description": "US regional bank serving the Midwest with consumer and business banking.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "ICBC",
+    "logo": "icbc",
+    "description": "Industrial and Commercial Bank of China, the largest bank in the world by total assets.",
+    "tags": [
+      "bank",
+      "china"
+    ]
+  },
+  {
+    "name": "ING",
+    "logo": "ing",
+    "description": "Dutch multinational bank known for direct online banking across Europe.",
+    "tags": [
+      "bank",
+      "europe",
+      "netherlands"
+    ]
+  },
+  {
+    "name": "Mitsubishi UFJ",
+    "logo": "mitsubishi-ufj",
+    "description": "MUFG, Japan's largest banking group and one of the world's biggest financial institutions.",
+    "tags": [
+      "bank",
+      "japan"
+    ]
+  },
+  {
+    "name": "PNC Bank",
+    "logo": "pnc-bank",
+    "description": "US regional bank offering consumer, business, and corporate banking.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "Santander",
+    "logo": "santander",
+    "description": "Spanish multinational bank with major retail operations across Europe and Latin America.",
+    "tags": [
+      "bank",
+      "europe",
+      "spain"
+    ]
+  },
+  {
+    "name": "Sumitomo Mitsui",
+    "logo": "sumitomo-mitsui",
+    "description": "SMBC, one of Japan's three megabanks, serving retail and corporate clients.",
+    "tags": [
+      "bank",
+      "japan"
+    ]
+  },
+  {
+    "name": "Synchrony",
+    "logo": "synchrony",
+    "description": "US consumer finance bank issuing store credit cards and point-of-sale financing.",
+    "tags": [
+      "bank",
+      "installments",
+      "us"
+    ]
+  },
+  {
+    "name": "UBS",
+    "logo": "ubs",
+    "description": "Swiss multinational bank and the world's largest wealth manager.",
+    "tags": [
+      "bank",
+      "europe",
+      "switzerland"
+    ]
+  },
+  {
+    "name": "U.S. Bank",
+    "logo": "us-bank",
+    "description": "US retail and commercial bank, also active in card issuing and merchant processing.",
+    "tags": [
+      "bank",
+      "us"
+    ]
+  },
+  {
+    "name": "Wells Fargo",
+    "logo": "wells-fargo",
+    "description": "US retail and commercial bank with a large branch network and card portfolio.",
+    "tags": [
+      "bank",
+      "us"
+    ]
   }
 ]
