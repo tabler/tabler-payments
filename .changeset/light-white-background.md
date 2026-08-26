@@ -5,4 +5,4 @@
 "@tabler/payments-astro": patch
 ---
 
-Updated the `Interac`, `Oxxo`, `Eway`, `Blik` and `Ripple` logos, and resized `Interac` from 100x70 to 100x60.
+Every `light` logo now has a solid white background instead of a transparent one.
