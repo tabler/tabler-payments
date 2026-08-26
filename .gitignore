@@ -4,3 +4,4 @@ node_modules
 .turbo
 packages/*/stats
 .pnpm-store
+.claude/launch.json

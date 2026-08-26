@@ -1,430 +1,1431 @@
 [
   {
     "name": "2c2p",
-    "logo": "2c2p"
+    "logo": "2c2p",
+    "description": "Southeast Asian payment gateway offering cards, e-wallets, and bank transfers across the region.",
+    "tags": [
+      "asia",
+      "payment gateway",
+      "processor",
+      "southeast asia"
+    ]
   },
   {
     "name": "2checkout",
-    "logo": "2checkout"
+    "logo": "2checkout",
+    "description": "Global payment processing platform for online merchants, now operating as Verifone.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Adyen",
-    "logo": "adyen"
+    "logo": "adyen",
+    "description": "Global payment platform used by large enterprises to accept cards, wallets, and local payment methods in one integration.",
+    "tags": [
+      "enterprise",
+      "global",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Affirm",
-    "logo": "affirm"
+    "logo": "affirm",
+    "description": "US buy now, pay later provider offering installment financing at checkout.",
+    "tags": [
+      "bnpl",
+      "installments",
+      "us"
+    ]
   },
   {
     "name": "Alipay Plus",
-    "logo": "alipay-plus"
+    "logo": "alipay-plus",
+    "description": "Cross-border version of Alipay connecting international merchants to multiple Asian e-wallets.",
+    "tags": [
+      "asia",
+      "cross-border",
+      "digital wallet",
+      "mobile payment"
+    ]
   },
   {
     "name": "Alipay",
-    "logo": "alipay"
+    "logo": "alipay",
+    "description": "Chinese mobile payment and digital wallet app operated by Ant Group.",
+    "tags": [
+      "china",
+      "digital wallet",
+      "mobile payment"
+    ]
   },
   {
     "name": "Allegro Pay",
-    "logo": "allegro-pay"
+    "logo": "allegro-pay",
+    "description": "Buy now, pay later service integrated into the Allegro marketplace in Poland.",
+    "tags": [
+      "bnpl",
+      "installments",
+      "poland"
+    ]
   },
   {
     "name": "Amazon Pay",
-    "logo": "amazon-pay"
+    "logo": "amazon-pay",
+    "description": "Checkout service letting Amazon customers pay on third-party sites using their Amazon account.",
+    "tags": [
+      "digital wallet",
+      "ecommerce",
+      "global"
+    ]
   },
   {
     "name": "Amazon",
-    "logo": "amazon"
+    "logo": "amazon",
+    "description": "Global e-commerce marketplace and technology company.",
+    "tags": [
+      "ecommerce",
+      "global",
+      "marketplace"
+    ]
   },
   {
     "name": "American Express",
-    "logo": "americanexpress"
+    "logo": "americanexpress",
+    "description": "Global card network and issuer known for premium credit and charge cards.",
+    "tags": [
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "Apple Pay",
-    "logo": "applepay"
+    "logo": "applepay",
+    "description": "Contactless mobile wallet built into Apple devices for in-store, in-app, and online payments.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "mobile payment",
+      "nfc"
+    ]
   },
   {
     "name": "Authorize",
-    "logo": "authorize"
+    "logo": "authorize",
+    "description": "US payment gateway (Authorize.Net) that lets merchants accept card and e-check payments online.",
+    "tags": [
+      "payment gateway",
+      "processor",
+      "us"
+    ]
   },
   {
     "name": "Autopay",
-    "logo": "autopay"
+    "logo": "autopay",
+    "description": "Polish online payment and bank transfer gateway operated by Blue Media.",
+    "tags": [
+      "bank transfer",
+      "gateway",
+      "poland"
+    ]
   },
   {
     "name": "Bancontact",
-    "logo": "bancontact"
+    "logo": "bancontact",
+    "description": "Belgium's leading debit card and bank transfer payment scheme.",
+    "tags": [
+      "bank transfer",
+      "belgium",
+      "card network"
+    ]
   },
   {
     "name": "Binance USD",
-    "logo": "binance-usd"
+    "logo": "binance-usd",
+    "description": "BUSD, a US dollar-pegged stablecoin formerly issued in partnership with Binance.",
+    "tags": [
+      "cryptocurrency",
+      "stablecoin"
+    ]
   },
   {
     "name": "Bitcoin",
-    "logo": "bitcoin"
+    "logo": "bitcoin",
+    "description": "The original decentralized cryptocurrency and peer-to-peer payment network.",
+    "tags": [
+      "cryptocurrency",
+      "global"
+    ]
   },
   {
     "name": "BitPay",
-    "logo": "bitpay"
+    "logo": "bitpay",
+    "description": "Cryptocurrency payment processor letting merchants accept Bitcoin and other digital currencies.",
+    "tags": [
+      "cryptocurrency",
+      "gateway",
+      "processor"
+    ]
   },
   {
     "name": "Bkash",
-    "logo": "bkash"
+    "logo": "bkash",
+    "description": "Leading mobile financial service in Bangladesh for payments and money transfers.",
+    "tags": [
+      "bangladesh",
+      "mobile payment"
+    ]
   },
   {
     "name": "Blik",
-    "logo": "blik"
+    "logo": "blik",
+    "description": "Polish mobile payment system for instant online, in-app, and in-store transactions.",
+    "tags": [
+      "bank transfer",
+      "mobile payment",
+      "poland"
+    ]
   },
   {
     "name": "Braintree",
-    "logo": "braintree"
+    "logo": "braintree",
+    "description": "PayPal-owned payment gateway offering cards, wallets, and Venmo checkout for developers.",
+    "tags": [
+      "payment gateway",
+      "processor",
+      "us"
+    ]
   },
   {
     "name": "Cash App",
-    "logo": "cash-app"
+    "logo": "cash-app",
+    "description": "US peer-to-peer mobile payment app operated by Block for sending, spending, and investing money.",
+    "tags": [
+      "digital wallet",
+      "mobile payment",
+      "p2p",
+      "us"
+    ]
   },
   {
     "name": "Chime",
-    "logo": "chime"
+    "logo": "chime",
+    "description": "US fintech offering fee-free mobile banking and a companion debit card.",
+    "tags": [
+      "neobank",
+      "us"
+    ]
   },
   {
     "name": "Cirrus",
-    "logo": "cirrus"
-  },
-  {
-    "name": "ClickandBuy",
-    "logo": "clickandbuy"
+    "logo": "cirrus",
+    "description": "Mastercard-owned global ATM network for cash withdrawals.",
+    "tags": [
+      "atm",
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "Coinkite",
-    "logo": "coinkite"
+    "logo": "coinkite",
+    "description": "Maker of Bitcoin hardware wallets and payment devices, including the Opendime and Coldcard.",
+    "tags": [
+      "cryptocurrency",
+      "hardware wallet"
+    ]
   },
   {
     "name": "Diners Club",
-    "logo": "dinersclub"
+    "logo": "dinersclub",
+    "description": "One of the oldest charge card networks, now largely operated through Discover in most markets.",
+    "tags": [
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "Direct Debit",
-    "logo": "directdebit"
+    "logo": "directdebit",
+    "description": "Recurring bank payment method that lets a payee automatically collect funds from a payer's account.",
+    "tags": [
+      "bank transfer",
+      "rail",
+      "recurring"
+    ]
   },
   {
     "name": "Discover",
-    "logo": "discover"
-  },
-  {
-    "name": "Dotpay",
-    "logo": "dotpay"
+    "logo": "discover",
+    "description": "US card network and issuer offering credit cards and payment processing.",
+    "tags": [
+      "card network",
+      "us"
+    ]
   },
   {
     "name": "Dwolla",
-    "logo": "dwolla"
+    "logo": "dwolla",
+    "description": "US API platform for building ACH bank transfer and payment flows.",
+    "tags": [
+      "ach",
+      "bank transfer",
+      "gateway",
+      "us"
+    ]
   },
   {
     "name": "EasyPaisa",
-    "logo": "easypaisa"
+    "logo": "easypaisa",
+    "description": "Mobile wallet and branchless banking service in Pakistan.",
+    "tags": [
+      "mobile payment",
+      "pakistan"
+    ]
   },
   {
     "name": "eBay",
-    "logo": "ebay"
+    "logo": "ebay",
+    "description": "Global online marketplace for consumer-to-consumer and business-to-consumer sales.",
+    "tags": [
+      "ecommerce",
+      "global",
+      "marketplace"
+    ]
   },
   {
     "name": "Elo",
-    "logo": "elo"
+    "logo": "elo",
+    "description": "Brazilian domestic card network created by a partnership of major local banks.",
+    "tags": [
+      "brazil",
+      "card network"
+    ]
   },
   {
     "name": "ePayco",
-    "logo": "epayco"
+    "logo": "epayco",
+    "description": "Colombian payment gateway for online businesses across Latin America.",
+    "tags": [
+      "colombia",
+      "latin america",
+      "payment gateway"
+    ]
   },
   {
     "name": "eSewa",
-    "logo": "esewa"
+    "logo": "esewa",
+    "description": "Leading digital wallet and mobile payment service in Nepal.",
+    "tags": [
+      "mobile payment",
+      "nepal"
+    ]
   },
   {
     "name": "Ethereum",
-    "logo": "ethereum"
+    "logo": "ethereum",
+    "description": "Decentralized blockchain platform and its native cryptocurrency, Ether.",
+    "tags": [
+      "cryptocurrency",
+      "global"
+    ]
   },
   {
     "name": "eWay",
-    "logo": "eway"
+    "logo": "eway",
+    "description": "Australian payment gateway for online and in-store card processing.",
+    "tags": [
+      "australia",
+      "payment gateway"
+    ]
   },
   {
     "name": "FonePay",
-    "logo": "fonepay"
+    "logo": "fonepay",
+    "description": "Interbank mobile payment network connecting banks and wallets across Nepal.",
+    "tags": [
+      "bank transfer",
+      "mobile payment",
+      "nepal"
+    ]
   },
   {
     "name": "Giropay",
-    "logo": "giropay"
+    "logo": "giropay",
+    "description": "German online bank transfer payment method used at checkout, now part of paydirekt/Wero.",
+    "tags": [
+      "bank transfer",
+      "germany"
+    ]
   },
   {
     "name": "Google Pay",
-    "logo": "google-pay"
+    "logo": "google-pay",
+    "description": "Google's digital wallet and checkout brand for contactless, in-app, and online payments.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "mobile payment",
+      "nfc"
+    ]
   },
   {
     "name": "Google Wallet",
-    "logo": "googlewallet"
+    "logo": "googlewallet",
+    "description": "Android app for storing cards, tickets, and passes, and making contactless payments.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "mobile payment",
+      "nfc"
+    ]
   },
   {
     "name": "HubSpot",
-    "logo": "hubspot"
+    "logo": "hubspot",
+    "description": "Customer relationship management and marketing platform (not a payment provider).",
+    "tags": [
+      "crm",
+      "software"
+    ]
   },
   {
     "name": "Ingenico",
-    "logo": "ingenico"
+    "logo": "ingenico",
+    "description": "Global point-of-sale terminal manufacturer and payment services provider, now part of Worldline.",
+    "tags": [
+      "global",
+      "pos",
+      "processor"
+    ]
   },
   {
     "name": "iDeal",
-    "logo": "ideal"
+    "logo": "ideal",
+    "description": "The Netherlands' most widely used online bank transfer payment method.",
+    "tags": [
+      "bank transfer",
+      "netherlands"
+    ]
   },
   {
     "name": "IMEPay",
-    "logo": "imepay"
+    "logo": "imepay",
+    "description": "Mobile wallet for digital payments and transfers in Nepal.",
+    "tags": [
+      "mobile payment",
+      "nepal"
+    ]
+  },
+  {
+    "name": "imoje (ING Pay)",
+    "logo": "imoje",
+    "description": "Polish payment gateway operated by ING Bank Śląski.",
+    "tags": [
+      "bank transfer",
+      "gateway",
+      "poland"
+    ]
   },
   {
     "name": "JCB",
-    "logo": "jcb"
+    "logo": "jcb",
+    "description": "Japan's international card network, widely accepted across Asia.",
+    "tags": [
+      "card network",
+      "japan"
+    ]
   },
   {
     "name": "Khalti",
-    "logo": "khalti"
+    "logo": "khalti",
+    "description": "Digital wallet and payment gateway for online and offline transactions in Nepal.",
+    "tags": [
+      "mobile payment",
+      "nepal"
+    ]
   },
   {
     "name": "Klarna",
-    "logo": "klarna"
-  },
-  {
-    "name": "Laser",
-    "logo": "laser"
+    "logo": "klarna",
+    "description": "Swedish fintech offering buy now, pay later, installments, and a shopping app across Europe and the US.",
+    "tags": [
+      "bnpl",
+      "europe",
+      "installments",
+      "sweden"
+    ]
   },
   {
     "name": "Litecoin",
-    "logo": "litecoin"
+    "logo": "litecoin",
+    "description": "Peer-to-peer cryptocurrency designed for fast, low-cost payments.",
+    "tags": [
+      "cryptocurrency",
+      "global"
+    ]
   },
   {
     "name": "Maestro",
-    "logo": "maestro"
+    "logo": "maestro",
+    "description": "Mastercard's international debit card network, common across Europe.",
+    "tags": [
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "Mastercard",
-    "logo": "mastercard"
+    "logo": "mastercard",
+    "description": "Global card network processing credit, debit, and prepaid card payments.",
+    "tags": [
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "Mercado Pago",
-    "logo": "mercado-pago"
+    "logo": "mercado-pago",
+    "description": "Latin America's leading digital wallet and payment platform, part of Mercado Libre.",
+    "tags": [
+      "digital wallet",
+      "latin america"
+    ]
   },
   {
     "name": "MetaMask",
-    "logo": "metamask"
+    "logo": "metamask",
+    "description": "Popular self-custody crypto wallet and browser extension for Ethereum and other blockchains.",
+    "tags": [
+      "cryptocurrency",
+      "wallet"
+    ]
   },
   {
     "name": "MIR",
-    "logo": "mir"
+    "logo": "mir",
+    "description": "Russia's domestic card payment network.",
+    "tags": [
+      "card network",
+      "russia"
+    ]
   },
   {
     "name": "Monero",
-    "logo": "monero"
+    "logo": "monero",
+    "description": "Privacy-focused cryptocurrency with obfuscated transaction details.",
+    "tags": [
+      "cryptocurrency",
+      "global",
+      "privacy"
+    ]
   },
   {
     "name": "MoneyGram",
-    "logo": "moneygram"
+    "logo": "moneygram",
+    "description": "Global money transfer service for sending cash across borders.",
+    "tags": [
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "Neteller",
-    "logo": "neteller"
-  },
-  {
-    "name": "Ogone",
-    "logo": "ogone"
-  },
-  {
-    "name": "OKPay",
-    "logo": "okpay"
+    "logo": "neteller",
+    "description": "Global digital wallet for online payments and money transfers, part of Paysafe.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "OpenSea",
-    "logo": "opensea"
+    "logo": "opensea",
+    "description": "Marketplace for buying, selling, and trading NFTs on Ethereum and other blockchains.",
+    "tags": [
+      "cryptocurrency",
+      "marketplace",
+      "nft"
+    ]
   },
   {
     "name": "Paybox",
-    "logo": "paybox"
+    "logo": "paybox",
+    "description": "French mobile payment app for peer-to-peer money transfers.",
+    "tags": [
+      "france",
+      "mobile payment",
+      "p2p"
+    ]
   },
   {
     "name": "Payconiq",
-    "logo": "payconiq"
+    "logo": "payconiq",
+    "description": "Mobile payment app for scanning QR codes to pay in stores and online, popular in Belgium and Luxembourg.",
+    "tags": [
+      "belgium",
+      "mobile payment",
+      "qr code"
+    ]
   },
   {
     "name": "Payka",
-    "logo": "payka"
+    "logo": "payka",
+    "description": "Polish deferred payment (buy now, pay later) service for bills and everyday purchases.",
+    "tags": [
+      "bnpl",
+      "installments",
+      "poland"
+    ]
   },
   {
     "name": "Payline",
-    "logo": "payline"
+    "logo": "payline",
+    "description": "US payment processing platform for card and ACH transactions, part of Fiserv.",
+    "tags": [
+      "payment gateway",
+      "processor",
+      "us"
+    ]
   },
   {
-    "name": "Paymill",
-    "logo": "paymill"
+    "name": "Paynow",
+    "logo": "paynow",
+    "description": "Singapore's national instant bank transfer service linked to mobile numbers and IDs.",
+    "tags": [
+      "bank transfer",
+      "singapore"
+    ]
   },
   {
     "name": "Payone",
-    "logo": "payone"
+    "logo": "payone",
+    "description": "German full-service payment provider for online and point-of-sale transactions.",
+    "tags": [
+      "germany",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Payoneer",
-    "logo": "payoneer"
+    "logo": "payoneer",
+    "description": "Cross-border payment platform for freelancers and businesses to send and receive international payments.",
+    "tags": [
+      "cross-border",
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "PayPal",
-    "logo": "paypal"
+    "logo": "paypal",
+    "description": "One of the world's largest digital wallets for online payments and money transfers.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "PayPo",
-    "logo": "paypo"
+    "logo": "paypo",
+    "description": "Polish buy now, pay later service for online purchases.",
+    "tags": [
+      "bnpl",
+      "installments",
+      "poland"
+    ]
   },
   {
     "name": "Paysafe",
-    "logo": "paysafe"
+    "logo": "paysafe",
+    "description": "Global payment processing company offering gateways, cards, and digital wallets.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Paysafecard",
-    "logo": "paysafecard"
+    "logo": "paysafecard",
+    "description": "Prepaid voucher for making online payments without a bank account or card.",
+    "tags": [
+      "europe",
+      "prepaid"
+    ]
   },
   {
     "name": "PayU",
-    "logo": "payu"
-  },
-  {
-    "name": "Payza",
-    "logo": "payza"
+    "logo": "payu",
+    "description": "Payment gateway serving growth markets across Asia, Latin America, and Central Europe.",
+    "tags": [
+      "emerging markets",
+      "global",
+      "payment gateway"
+    ]
   },
   {
     "name": "Poli",
-    "logo": "poli"
+    "logo": "poli",
+    "description": "Australian and New Zealand online bank transfer payment method.",
+    "tags": [
+      "australia",
+      "bank transfer",
+      "new zealand"
+    ]
   },
   {
     "name": "Przelewy24",
-    "logo": "przelewy24"
+    "logo": "przelewy24",
+    "description": "Poland's leading online bank transfer payment gateway.",
+    "tags": [
+      "bank transfer",
+      "gateway",
+      "poland"
+    ]
   },
   {
     "name": "Revolut Pay",
-    "logo": "revolut-pay"
+    "logo": "revolut-pay",
+    "description": "Checkout payment method for Revolut app users to pay online with their Revolut account.",
+    "tags": [
+      "digital wallet",
+      "europe",
+      "neobank"
+    ]
   },
   {
     "name": "Ripple",
-    "logo": "ripple"
-  },
-  {
-    "name": "Sage",
-    "logo": "sage"
+    "logo": "ripple",
+    "description": "Cryptocurrency and payment network (XRP) built for fast, low-cost cross-border settlement.",
+    "tags": [
+      "cross-border",
+      "cryptocurrency",
+      "global"
+    ]
   },
   {
     "name": "Samsung Pay",
-    "logo": "samsung-pay"
+    "logo": "samsung-pay",
+    "description": "Samsung's mobile wallet for contactless payments using NFC and MST technology.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "mobile payment",
+      "nfc"
+    ]
   },
   {
     "name": "SEPA",
-    "logo": "sepa"
+    "logo": "sepa",
+    "description": "Single Euro Payments Area — the standard for euro-denominated bank transfers across Europe.",
+    "tags": [
+      "bank transfer",
+      "europe",
+      "rail"
+    ]
   },
   {
     "name": "Shop Pay",
-    "logo": "shop-pay"
+    "logo": "shop-pay",
+    "description": "Shopify's accelerated checkout wallet for faster online purchases.",
+    "tags": [
+      "digital wallet",
+      "ecommerce",
+      "global"
+    ]
   },
   {
     "name": "Shopify",
-    "logo": "shopify"
+    "logo": "shopify",
+    "description": "Global e-commerce platform for building and running online stores.",
+    "tags": [
+      "ecommerce",
+      "global",
+      "platform"
+    ]
   },
   {
     "name": "Skrill",
-    "logo": "skrill"
+    "logo": "skrill",
+    "description": "Global digital wallet for online payments, money transfers, and currency exchange.",
+    "tags": [
+      "digital wallet",
+      "global",
+      "money transfer"
+    ]
+  },
+  {
+    "name": "SkyCash",
+    "logo": "skycash",
+    "description": "Polish mobile app for paying for parking, transit, and other everyday services.",
+    "tags": [
+      "mobile payment",
+      "poland"
+    ]
   },
   {
     "name": "Solana",
-    "logo": "solana"
-  },
-  {
-    "name": "Solo",
-    "logo": "solo"
+    "logo": "solana",
+    "description": "High-throughput blockchain platform and its native cryptocurrency, SOL.",
+    "tags": [
+      "cryptocurrency",
+      "global"
+    ]
   },
   {
     "name": "Spingo",
-    "logo": "spingo"
+    "logo": "spingo",
+    "description": "Polish deferred B2B payment service integrated with Przelewy24.",
+    "tags": [
+      "b2b",
+      "installments",
+      "poland"
+    ]
   },
   {
     "name": "Square",
-    "logo": "square"
+    "logo": "square",
+    "description": "US payment and point-of-sale platform for small and medium-sized businesses, part of Block.",
+    "tags": [
+      "pos",
+      "processor",
+      "us"
+    ]
   },
   {
     "name": "Stax",
-    "logo": "stax"
+    "logo": "stax",
+    "description": "US subscription-based payment processing platform for merchants.",
+    "tags": [
+      "payment gateway",
+      "processor",
+      "us"
+    ]
   },
   {
     "name": "Stripe",
-    "logo": "stripe"
-  },
-  {
-    "name": "Switch",
-    "logo": "switch"
+    "logo": "stripe",
+    "description": "Global payment infrastructure platform used by developers to accept and manage online payments.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Tether",
-    "logo": "tether"
+    "logo": "tether",
+    "description": "USDT, the largest US dollar-pegged stablecoin by market capitalization.",
+    "tags": [
+      "cryptocurrency",
+      "stablecoin"
+    ]
   },
   {
     "name": "Tpay",
-    "logo": "tpay"
+    "logo": "tpay",
+    "description": "Polish online payment gateway for bank transfers and cards.",
+    "tags": [
+      "bank transfer",
+      "gateway",
+      "poland"
+    ]
   },
   {
     "name": "Troy",
-    "logo": "troy"
+    "logo": "troy",
+    "description": "Turkey's domestic card payment network.",
+    "tags": [
+      "card network",
+      "turkey"
+    ]
   },
   {
     "name": "True USD",
-    "logo": "true-usd"
-  },
-  {
-    "name": "Ukash",
-    "logo": "ukash"
+    "logo": "true-usd",
+    "description": "TUSD, a US dollar-pegged stablecoin backed by fiat reserves.",
+    "tags": [
+      "cryptocurrency",
+      "stablecoin"
+    ]
   },
   {
     "name": "UnionPay",
-    "logo": "unionpay"
+    "logo": "unionpay",
+    "description": "China's state-backed card network and the largest card network in the world by transaction volume.",
+    "tags": [
+      "card network",
+      "china",
+      "global"
+    ]
   },
   {
     "name": "Venmo",
-    "logo": "venmo"
+    "logo": "venmo",
+    "description": "US peer-to-peer mobile payment app owned by PayPal, popular for splitting bills among friends.",
+    "tags": [
+      "digital wallet",
+      "mobile payment",
+      "p2p",
+      "us"
+    ]
   },
   {
     "name": "Verifone",
-    "logo": "verifone"
-  },
-  {
-    "name": "Verisign",
-    "logo": "verisign"
+    "logo": "verifone",
+    "description": "Global point-of-sale hardware and payment technology provider.",
+    "tags": [
+      "global",
+      "pos",
+      "processor"
+    ]
   },
   {
     "name": "Visa",
-    "logo": "visa"
+    "logo": "visa",
+    "description": "The world's largest card network, processing credit, debit, and prepaid card payments.",
+    "tags": [
+      "card network",
+      "global"
+    ]
   },
   {
     "name": "WeChat Pay",
-    "logo": "we-chat-pay"
+    "logo": "we-chat-pay",
+    "description": "Mobile payment feature built into WeChat, one of China's most-used apps.",
+    "tags": [
+      "china",
+      "digital wallet",
+      "mobile payment"
+    ]
   },
   {
     "name": "WebMoney",
-    "logo": "webmoney"
+    "logo": "webmoney",
+    "description": "Digital wallet and settlement system popular in Russia and Eastern Europe.",
+    "tags": [
+      "digital wallet",
+      "eastern europe"
+    ]
   },
   {
     "name": "Western Union",
-    "logo": "westernunion"
+    "logo": "westernunion",
+    "description": "Global money transfer network for sending cash across borders.",
+    "tags": [
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "Wise",
-    "logo": "wise"
+    "logo": "wise",
+    "description": "Cross-border money transfer service offering low-cost international payments at the real exchange rate.",
+    "tags": [
+      "cross-border",
+      "global",
+      "money transfer"
+    ]
   },
   {
     "name": "Worldpay",
-    "logo": "worldpay"
+    "logo": "worldpay",
+    "description": "Global payment processing company serving online, in-store, and mobile merchants.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
   },
   {
     "name": "Zelle",
-    "logo": "zelle"
+    "logo": "zelle",
+    "description": "US bank-backed peer-to-peer payment network for sending money directly between bank accounts.",
+    "tags": [
+      "bank transfer",
+      "p2p",
+      "us"
+    ]
+  },
+  {
+    "name": "Pix",
+    "logo": "pix",
+    "description": "Brazil's instant payment system built by the Central Bank for free, real-time bank transfers.",
+    "tags": [
+      "bank transfer",
+      "brazil",
+      "rail"
+    ]
+  },
+  {
+    "name": "UPI",
+    "logo": "upi",
+    "description": "India's Unified Payments Interface for instant bank-to-bank mobile payments.",
+    "tags": [
+      "bank transfer",
+      "india",
+      "mobile payment",
+      "rail"
+    ]
+  },
+  {
+    "name": "Paytm",
+    "logo": "paytm",
+    "description": "One of India's largest digital wallet and payment platforms.",
+    "tags": [
+      "digital wallet",
+      "india",
+      "mobile payment"
+    ]
+  },
+  {
+    "name": "RuPay",
+    "logo": "rupay",
+    "description": "India's domestic card payment network built by the National Payments Corporation of India.",
+    "tags": [
+      "card network",
+      "india"
+    ]
+  },
+  {
+    "name": "Swish",
+    "logo": "swish",
+    "description": "Sweden's most popular mobile payment app for instant bank transfers.",
+    "tags": [
+      "bank transfer",
+      "mobile payment",
+      "sweden"
+    ]
+  },
+  {
+    "name": "Vipps",
+    "logo": "vipps",
+    "description": "Norway's leading mobile payment app for person-to-person and online payments.",
+    "tags": [
+      "mobile payment",
+      "norway",
+      "p2p"
+    ]
+  },
+  {
+    "name": "MobilePay",
+    "logo": "mobilepay",
+    "description": "Danish mobile payment app for everyday purchases and money transfers.",
+    "tags": [
+      "denmark",
+      "mobile payment"
+    ]
+  },
+  {
+    "name": "M-Pesa",
+    "logo": "mpesa",
+    "description": "Mobile money service originating in Kenya, widely used across Africa for payments and transfers.",
+    "tags": [
+      "africa",
+      "kenya",
+      "mobile payment"
+    ]
+  },
+  {
+    "name": "Twint",
+    "logo": "twint",
+    "description": "Switzerland's national mobile payment app for in-store, online, and peer-to-peer payments.",
+    "tags": [
+      "mobile payment",
+      "p2p",
+      "switzerland"
+    ]
+  },
+  {
+    "name": "Afterpay",
+    "logo": "afterpay",
+    "description": "Buy now, pay later service, popular in Australia and the US, now owned by Block.",
+    "tags": [
+      "australia",
+      "bnpl",
+      "installments",
+      "us"
+    ]
+  },
+  {
+    "name": "PhonePe",
+    "logo": "phonepe",
+    "description": "One of India's largest UPI-based mobile payment apps.",
+    "tags": [
+      "india",
+      "mobile payment"
+    ]
+  },
+  {
+    "name": "GrabPay",
+    "logo": "grabpay",
+    "description": "Digital wallet built into the Grab super-app, widely used across Southeast Asia.",
+    "tags": [
+      "digital wallet",
+      "mobile payment",
+      "southeast asia"
+    ]
+  },
+  {
+    "name": "GCash",
+    "logo": "gcash",
+    "description": "Leading mobile wallet in the Philippines for payments, transfers, and bills.",
+    "tags": [
+      "mobile payment",
+      "philippines"
+    ]
+  },
+  {
+    "name": "PayPay",
+    "logo": "paypay",
+    "description": "Japan's most widely used QR code mobile payment app.",
+    "tags": [
+      "japan",
+      "mobile payment",
+      "qr code"
+    ]
+  },
+  {
+    "name": "LINE Pay",
+    "logo": "linepay",
+    "description": "Mobile wallet integrated into the LINE messaging app, popular in Japan and Taiwan.",
+    "tags": [
+      "japan",
+      "mobile payment",
+      "taiwan"
+    ]
+  },
+  {
+    "name": "USDC",
+    "logo": "usdc",
+    "description": "USD Coin, a US dollar-pegged stablecoin issued by Circle.",
+    "tags": [
+      "cryptocurrency",
+      "stablecoin"
+    ]
+  },
+  {
+    "name": "Interac",
+    "logo": "interac",
+    "description": "Canada's national debit card and e-transfer network.",
+    "tags": [
+      "bank transfer",
+      "canada",
+      "card network"
+    ]
+  },
+  {
+    "name": "Sofort",
+    "logo": "sofort",
+    "description": "German online bank transfer payment method, now part of Klarna.",
+    "tags": [
+      "bank transfer",
+      "germany"
+    ]
+  },
+  {
+    "name": "STC Pay",
+    "logo": "stcpay",
+    "description": "Digital wallet operated by Saudi Telecom Company for payments across Saudi Arabia.",
+    "tags": [
+      "digital wallet",
+      "mobile payment",
+      "saudi arabia"
+    ]
+  },
+  {
+    "name": "Mada",
+    "logo": "mada",
+    "description": "Saudi Arabia's domestic debit card payment network.",
+    "tags": [
+      "card network",
+      "saudi arabia"
+    ]
+  },
+  {
+    "name": "Airwallex",
+    "logo": "airwallex",
+    "description": "Global financial platform for cross-border payments, business accounts, and payment infrastructure.",
+    "tags": [
+      "cross-border",
+      "gateway",
+      "global",
+      "processor"
+    ]
+  },
+  {
+    "name": "Nuvei",
+    "logo": "nuvei",
+    "description": "Global payment technology company offering card, alternative, and local payment methods.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "Rapyd",
+    "logo": "rapyd",
+    "description": "Global fintech-as-a-service platform for cross-border payments and payouts.",
+    "tags": [
+      "cross-border",
+      "gateway",
+      "global",
+      "processor"
+    ]
+  },
+  {
+    "name": "JazzCash",
+    "logo": "jazzcash",
+    "description": "Mobile wallet and branchless banking service operated by Jazz, a major Pakistani telecom.",
+    "tags": [
+      "mobile payment",
+      "pakistan"
+    ]
+  },
+  {
+    "name": "Meta Pay",
+    "logo": "meta-pay",
+    "description": "Payment feature built into Meta's apps (Facebook, Instagram, WhatsApp) for checkout and transfers.",
+    "tags": [
+      "digital wallet",
+      "global"
+    ]
+  },
+  {
+    "name": "BNB Chain",
+    "logo": "bnb-chain",
+    "description": "Blockchain ecosystem built by Binance, home to the BNB cryptocurrency.",
+    "tags": [
+      "blockchain",
+      "cryptocurrency",
+      "global"
+    ]
+  },
+  {
+    "name": "Binance",
+    "logo": "binance",
+    "description": "The world's largest cryptocurrency exchange by trading volume.",
+    "tags": [
+      "crypto exchange",
+      "cryptocurrency",
+      "global"
+    ]
+  },
+  {
+    "name": "Coinbase",
+    "logo": "coinbase",
+    "description": "US-listed cryptocurrency exchange for buying, selling, and storing digital assets.",
+    "tags": [
+      "crypto exchange",
+      "cryptocurrency",
+      "us"
+    ]
+  },
+  {
+    "name": "Crypto.com",
+    "logo": "crypto-com",
+    "description": "Global cryptocurrency exchange and app offering trading, cards, and a native token.",
+    "tags": [
+      "crypto exchange",
+      "cryptocurrency",
+      "global"
+    ]
+  },
+  {
+    "name": "Kraken",
+    "logo": "kraken",
+    "description": "Long-running US cryptocurrency exchange for trading and custody of digital assets.",
+    "tags": [
+      "crypto exchange",
+      "cryptocurrency",
+      "us"
+    ]
+  },
+  {
+    "name": "Airtm",
+    "logo": "airtm",
+    "description": "Digital dollar wallet and peer-to-peer exchange popular across Latin America.",
+    "tags": [
+      "digital wallet",
+      "latin america",
+      "p2p"
+    ]
+  },
+  {
+    "name": "Brex",
+    "logo": "brex",
+    "description": "US fintech offering corporate cards and spend management for startups and enterprises.",
+    "tags": [
+      "corporate card",
+      "neobank",
+      "us"
+    ]
+  },
+  {
+    "name": "Checkout.com",
+    "logo": "checkout-com",
+    "description": "Global payment processing platform for enterprise merchants.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "Nubank",
+    "logo": "nu",
+    "description": "Nubank, Latin America's largest digital bank, offering cards and accounts across Brazil, Mexico, and Colombia.",
+    "tags": [
+      "latin america",
+      "neobank"
+    ]
+  },
+  {
+    "name": "Mercury",
+    "logo": "mercury",
+    "description": "US digital banking platform built for startups and technology companies.",
+    "tags": [
+      "neobank",
+      "us"
+    ]
+  },
+  {
+    "name": "NorthOne",
+    "logo": "northone",
+    "description": "US digital banking platform for small businesses.",
+    "tags": [
+      "neobank",
+      "us"
+    ]
+  },
+  {
+    "name": "Ant Group",
+    "logo": "ant-group",
+    "description": "Chinese fintech giant behind Alipay, providing payments and financial services across Asia.",
+    "tags": [
+      "china",
+      "digital wallet",
+      "fintech"
+    ]
+  },
+  {
+    "name": "Fiserv",
+    "logo": "fiserv",
+    "description": "Global financial technology company providing payment processing and banking infrastructure.",
+    "tags": [
+      "global",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "NCR",
+    "logo": "ncr",
+    "description": "Global provider of point-of-sale and payment technology for retail and hospitality.",
+    "tags": [
+      "global",
+      "pos",
+      "processor"
+    ]
+  },
+  {
+    "name": "ACH Transfer",
+    "logo": "ach-transfer",
+    "description": "Automated Clearing House network for electronic bank-to-bank transfers in the US.",
+    "tags": [
+      "ach",
+      "bank transfer",
+      "rail",
+      "us"
+    ]
+  },
+  {
+    "name": "SWIFT",
+    "logo": "swift",
+    "description": "Global messaging network banks use to send secure cross-border payment instructions.",
+    "tags": [
+      "bank transfer",
+      "cross-border",
+      "global",
+      "rail"
+    ]
+  },
+  {
+    "name": "Wire Transfer",
+    "logo": "wire-transfer",
+    "description": "Direct electronic transfer of funds between bank accounts.",
+    "tags": [
+      "bank transfer",
+      "global",
+      "rail"
+    ]
+  },
+  {
+    "name": "Razorpay",
+    "logo": "razorpay",
+    "description": "India's leading payment gateway for businesses to accept cards, UPI, and other local methods.",
+    "tags": [
+      "india",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "Flutterwave",
+    "logo": "flutterwave",
+    "description": "Pan-African payment infrastructure company enabling businesses to accept payments across the continent.",
+    "tags": [
+      "africa",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "Paystack",
+    "logo": "paystack",
+    "description": "Nigerian payment gateway, owned by Stripe, for accepting payments across Africa.",
+    "tags": [
+      "africa",
+      "nigeria",
+      "payment gateway"
+    ]
+  },
+  {
+    "name": "Mollie",
+    "logo": "mollie",
+    "description": "European payment service provider offering a simple gateway for online and in-person payments.",
+    "tags": [
+      "europe",
+      "payment gateway",
+      "processor"
+    ]
+  },
+  {
+    "name": "Trustly",
+    "logo": "trustly",
+    "description": "European open banking payment method for direct account-to-account transfers.",
+    "tags": [
+      "bank transfer",
+      "europe",
+      "open banking"
+    ]
+  },
+  {
+    "name": "OXXO",
+    "logo": "oxxo",
+    "description": "Cash payment voucher accepted at OXXO convenience stores, widely used for e-commerce in Mexico.",
+    "tags": [
+      "cash",
+      "mexico",
+      "prepaid"
+    ]
   }
 ]
