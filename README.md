@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://tabler.io/payments?ref=tabler-payments-readme"><img src="https://raw.githubusercontent.com/tabler/tabler-payments/main/.github/og.png" alt="Tabler Payments" width="838"></a>
+<a href="https://tabler.io/payments?ref=tabler-payments-readme"><img src=".github/og.png" alt="Tabler Payments" width="838"></a>
 </p>
 
 <p align="center">
