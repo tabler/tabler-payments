@@ -73,8 +73,7 @@ const issues: { label: string; slugs: string[] }[] = [
       .payment-logo {
         display: inline-flex;
         align-items: center;
-        height: 2rem;
-        width: 3.325rem;
+        height: 3rem;
         flex: none;
       }
 
@@ -147,7 +146,7 @@ const issues: { label: string; slugs: string[] }[] = [
                           <div class="col">
                             <div class="row">
                               <div class="col-auto">
-                                <span class="payment-logo" set:html={readSvg('light', p.slug)} />
+                                <span class="payment-logo rounded border overflow-hidden" set:html={readSvg('light', p.slug)} />
                               </div>
                               <div class="col">
                                 <strong class="d-block">{p.name}</strong>
@@ -183,7 +182,7 @@ const issues: { label: string; slugs: string[] }[] = [
                           <div class="col">
                             <div class="row">
                               <div class="col-auto">
-                                <span class="payment-logo" set:html={readSvg('dark', p.slug)} />
+                                <span class="payment-logo rounded border overflow-hidden" set:html={readSvg('dark', p.slug)} />
                               </div>
                               <div class="col">
                                 <strong class="d-block">{p.name}</strong>
