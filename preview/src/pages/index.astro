@@ -86,11 +86,13 @@ const issues: { label: string; slugs: string[] }[] = [
   <body>
     <div class="page">
       <div class="page-wrapper">
-        <div class="page-header d-print-none container-xl mt-4">
-          <h2 class="page-title">Payment providers</h2>
-          <div class="text-secondary mt-1">
-            {providers.length} logos on disk (light + dark) — {providers.length - unregistered.length} of them listed
-            in payments.json, which has {(payments as Provider[]).length} entries.
+        <div class="page-header d-print-none mt-4">
+          <div class="container-xl">
+            <h2 class="page-title">Payment providers</h2>
+            <div class="text-secondary mt-1">
+              {providers.length} logos on disk (light + dark) — {providers.length - unregistered.length} of them listed
+              in payments.json, which has {(payments as Provider[]).length} entries.
+            </div>
           </div>
         </div>
 
