@@ -1,8 +1,0 @@
----
-"@tabler/payments-react": patch
-"@tabler/payments-vue": patch
-"@tabler/payments-preact": patch
-"@tabler/payments-astro": patch
----
-
-Updated the `Interac`, `Oxxo`, `Eway`, `Blik` and `Ripple` logos, and resized `Interac` from 100x70 to 100x60.
