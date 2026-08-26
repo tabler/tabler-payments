@@ -16,25 +16,49 @@ interface Provider {
 // (`preview/`) as the working directory.
 const SRC_DIR = path.resolve(process.cwd(), '../src');
 
-const readSvg = (variant: 'light' | 'dark', slug: string): string | null => {
-  const file = `${SRC_DIR}/${variant}/${slug}.svg`;
-  return fs.existsSync(file) ? fs.readFileSync(file, 'utf-8') : null;
-};
+const listSlugs = (variant: 'light' | 'dark'): string[] =>
+  fs
+    .readdirSync(`${SRC_DIR}/${variant}`)
+    .filter((f) => f.endsWith('.svg'))
+    .map((f) => f.slice(0, -'.svg'.length));
 
-const all = payments as Provider[];
+const readSvg = (variant: 'light' | 'dark', slug: string): string =>
+  fs.readFileSync(`${SRC_DIR}/${variant}/${slug}.svg`, 'utf-8');
 
-// Same reconciliation the package builds do: skip providers with no SVG yet
-// instead of failing, so the page still renders while assets catch up.
-const missing: string[] = [];
-const providers = all.filter((p) => {
-  const ok = readSvg('light', p.logo) !== null && readSvg('dark', p.logo) !== null;
-  if (!ok) missing.push(p.logo);
-  return ok;
-});
+const titleFromSlug = (slug: string): string =>
+  slug
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
-if (missing.length) {
-  console.warn(`[preview] Skipping ${missing.length} provider(s) with no SVG yet: ${missing.join(', ')}`);
-}
+const registry = new Map((payments as Provider[]).map((p) => [p.logo, p]));
+const lightSlugs = listSlugs('light');
+const darkSlugs = new Set(listSlugs('dark'));
+
+// The page is driven by what is actually on disk, not by payments.json, so the
+// count it reports always matches the number of logos rendered below. Anything
+// that exists in only one of the two sources is called out in the summary
+// instead of being silently dropped.
+const providers = lightSlugs
+  .filter((slug) => darkSlugs.has(slug))
+  .map((slug) => ({
+    slug,
+    name: registry.get(slug)?.name ?? titleFromSlug(slug),
+    registered: registry.has(slug),
+  }))
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+
+const unregistered = providers.filter((p) => !p.registered).map((p) => p.slug);
+const incomplete = lightSlugs.filter((slug) => !darkSlugs.has(slug));
+const missing = (payments as Provider[])
+  .filter((p) => !lightSlugs.includes(p.logo) || !darkSlugs.has(p.logo))
+  .map((p) => p.logo);
+
+const issues: { label: string; slugs: string[] }[] = [
+  { label: 'SVG pair on disk with no payments.json entry', slugs: unregistered },
+  { label: 'payments.json entry with no SVG yet', slugs: missing },
+  { label: 'light SVG with no dark counterpart', slugs: incomplete },
+].filter((issue) => issue.slugs.length > 0);
 ---
 
 <html lang="en">
@@ -49,8 +73,7 @@ if (missing.length) {
       .payment-logo {
         display: inline-flex;
         align-items: center;
-        height: 2rem;
-        width: 3.325rem;
+        height: 3rem;
         flex: none;
       }
 
@@ -63,22 +86,59 @@ if (missing.length) {
   <body>
     <div class="page">
       <div class="page-wrapper">
-        <div class="page-header d-print-none container-xl mt-4">
-          <h2 class="page-title">Payment providers</h2>
-          <div class="text-secondary mt-1">
-            {providers.length} of {all.length} providers have an SVG on both light and dark background{missing.length ? ` (${missing.length} pending)` : ''}.
+        <div class="page-header d-print-none mt-4">
+          <div class="container-xl">
+            <h2 class="page-title">Payment providers</h2>
+            <div class="text-secondary mt-1">
+              {providers.length} logos on disk (light + dark) — {providers.length - unregistered.length} of them listed
+              in payments.json, which has {(payments as Provider[]).length} entries.
+            </div>
           </div>
         </div>
 
         <div class="page-body">
           <div class="container-xl">
             <div class="row row-cards">
+              {
+                issues.length > 0 && (
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div>
+                          <h3 class="card-title">Data mismatches</h3>
+                          <div class="card-subtitle">
+                            payments.json and src/ are out of sync. Every logo below is still rendered.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="list-group list-group-flush">
+                        {issues.map((issue) => (
+                          <div class="list-group-item">
+                            <strong class="d-block">
+                              {issue.slugs.length} × {issue.label}
+                            </strong>
+                            <div class="mt-1">
+                              {issue.slugs.map((slug) => (
+                                <code class="me-2">{slug}</code>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )
+              }
+
               <div class="col-12">
                 <div class="card">
                   <div class="card-header">
                     <div>
                       <h3 class="card-title">Light background</h3>
                       <div class="card-subtitle">Provider logos on a light background, for use on white or light cards.</div>
+                    </div>
+                    <div class="card-actions">
+                      <span class="badge bg-blue-lt">{providers.length}</span>
                     </div>
                   </div>
                   <div class="card-body">
@@ -88,12 +148,13 @@ if (missing.length) {
                           <div class="col">
                             <div class="row">
                               <div class="col-auto">
-                                <span class="payment-logo" set:html={readSvg('light', p.logo)} />
+                                <span class="payment-logo rounded border overflow-hidden" set:html={readSvg('light', p.slug)} />
                               </div>
                               <div class="col">
                                 <strong class="d-block">{p.name}</strong>
                                 <div class="mt-1">
-                                  <code>{p.logo}</code>
+                                  <code>{p.slug}</code>
+                                  {!p.registered && <span class="badge bg-yellow-lt ms-1">unlisted</span>}
                                 </div>
                               </div>
                             </div>
@@ -112,6 +173,9 @@ if (missing.length) {
                       <h3 class="card-title">Dark background</h3>
                       <div class="card-subtitle">Provider logos with an inverted color scheme, for dark backgrounds.</div>
                     </div>
+                    <div class="card-actions">
+                      <span class="badge bg-blue-lt">{providers.length}</span>
+                    </div>
                   </div>
                   <div class="card-body">
                     <div class="row g-5 row-cols-5">
@@ -120,12 +184,13 @@ if (missing.length) {
                           <div class="col">
                             <div class="row">
                               <div class="col-auto">
-                                <span class="payment-logo" set:html={readSvg('dark', p.logo)} />
+                                <span class="payment-logo rounded border overflow-hidden" set:html={readSvg('dark', p.slug)} />
                               </div>
                               <div class="col">
                                 <strong class="d-block">{p.name}</strong>
                                 <div class="mt-1">
-                                  <code>{p.logo}-dark</code>
+                                  <code>{p.slug}-dark</code>
+                                  {!p.registered && <span class="badge bg-yellow-lt ms-1">unlisted</span>}
                                 </div>
                               </div>
                             </div>
