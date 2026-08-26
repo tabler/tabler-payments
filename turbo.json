@@ -4,7 +4,7 @@
     "build": {
       "outputs": ["dist/**", "src/payments/**", "src/payments-list.ts", "providers/**", "payments.json", "payments-nodes.json"],
       "dependsOn": ["^build"],
-      "inputs": ["../../src/**"]
+      "inputs": ["$TURBO_DEFAULT$", "../../src/**", "../../payments.json"]
     },
     "lint": {},
     "dev": {
