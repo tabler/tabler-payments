@@ -1,6 +1,6 @@
 {
   "name": "@tabler/payments-react",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Payment provider logos as React components.",
   "homepage": "https://github.com/tabler/tabler-payments",
